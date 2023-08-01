@@ -1,0 +1,36 @@
+{
+    "Officer Quarters": {
+        "connects_to": ["Arsenal", "Maintenance", "Prison", "Soldier Quarters", "Arena"],
+		"starting": true
+    },
+	
+	"Arsenal": {
+		"requires": ["Lockdown Wheel"],
+		"connects_to": ["Officer Quarters", "Roman Tunnels"]
+	},
+	
+	"Maintenance": {
+		"requires": ["Lockdown Wheel"],
+		"connects_to": ["Officer Quarters"]
+	},
+	
+	"Prison": {
+		"requires": ["Lockdown Wheel"],
+		"connects_to": ["Officer Quarters"]
+	},
+	
+	"Soldier Quarters": {
+		"requires": ["Lockdown Wheel"],
+		"connects_to": ["Officer Quarters"]
+	},
+	
+	"Roman Tunnels": {
+		"requires": ["Lockdown Wheel", "Cutters"],
+		"connects_to": ["Arsenal"]
+	},
+	
+	"Arena": {
+		"requires": ["Detonator Handle", "Dynamite"]
+	}
+	
+}

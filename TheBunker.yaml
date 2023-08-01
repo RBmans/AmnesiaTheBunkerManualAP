@@ -1,0 +1,6 @@
+description: Manual config for Amnesia The Bunker
+game: Manual_thebunker_rbman
+name: RBunkerM
+Manual_thebunker_rbman:
+  progression_balancing: 50
+  accessibility: items

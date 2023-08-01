@@ -1,0 +1,323 @@
+[
+    { 
+        "name": "Photo 0", 
+        "region": "Officer Quarters",
+        "requires": []
+    },
+	{ 
+        "name": "Photo 4", 
+        "region": "Officer Quarters",
+        "requires": ["Code - Clement"]
+    },
+	{ 
+        "name": "Photo 9", 
+        "region": "Officer Quarters",
+        "requires": []
+    },
+	{ 
+        "name": "Photo 13", 
+        "region": "Officer Quarters",
+        "requires": []
+    },
+    { 
+        "name": "Photo 14", 
+        "region": "Officer Quarters",
+        "requires": []
+    },
+	{ 
+        "name": "Photo 15", 
+        "region": "Officer Quarters",
+        "requires": []
+    },
+	{ 
+        "name": "Photo 10", 
+        "region": "Prison",
+        "requires": []
+    },
+	{ 
+        "name": "Map - Prison", 
+        "region": "Prison",
+        "requires": []
+    },
+	{ 
+        "name": "Photo 2", 
+        "region": "Soldier Quarters",
+        "requires": []
+    },
+	{ 
+        "name": "Photo 5", 
+        "region": "Soldier Quarters",
+        "requires": []
+    },
+	{ 
+        "name": "Photo 6", 
+        "region": "Soldier Quarters",
+        "requires": []
+    },
+	{ 
+        "name": "Photo 8", 
+        "region": "Soldier Quarters",
+        "requires": []
+    },
+	{ 
+        "name": "Photo 11", 
+        "region": "Soldier Quarters",
+        "requires": []
+    },
+	{ 
+        "name": "Map - Soldier Quarters", 
+        "region": "Soldier Quarters",
+        "requires": []
+    },
+	{ 
+        "name": "Photo 3", 
+        "region": "Maintenance",
+        "requires": []
+    },
+	{ 
+        "name": "Photo 12", 
+        "region": "Maintenance",
+        "requires": []
+    },
+	{ 
+        "name": "Map - Maintenance", 
+        "region": "Maintenance",
+        "requires": []
+    },
+	{ 
+        "name": "Photo 1", 
+        "region": "Arsenal",
+        "requires": []
+    },
+	{ 
+        "name": "Map - Arsenal", 
+        "region": "Arsenal",
+        "requires": []
+    },
+	{ 
+        "name": "Photo 7", 
+        "region": "Roman Tunnels",
+        "requires": []
+    },
+    { 
+        "name": "Pocket Bag - Delisle's Room", 
+        "region": "Officer Quarters",
+        "requires": []
+    },
+	{ 
+        "name": "Pocket Bag - Boucher's Locker", 
+        "region": "Officer Quarters",
+        "requires": ["Code - Boucher"]
+    },
+    { 
+        "name": "Pocket Bag - Roman Tunnels", 
+        "region": "Roman Tunnels"
+    },
+	{ 
+        "name": "Item from Travers' Locker", 
+        "region": "Officer Quarters",
+        "requires": ["Code - Travers"]
+    },
+	{ 
+        "name": "Item from Auclair's Locker", 
+        "region": "Officer Quarters",
+        "requires": ["Code - Auclair"]
+    },
+	{ 
+        "name": "Item from Fortin's Locker", 
+        "region": "Officer Quarters",
+        "requires": ["Code - Fortin"]
+    },
+	{ 
+        "name": "Item from Bardin's Locker", 
+        "region": "Officer Quarters",
+        "requires": ["Code - Bardin"]
+    },
+    { 
+        "name": "Pillbox Key", 
+        "region": "Maintenance",
+		"requires": "(|Torch| and |Lighter|) or (|Gas Grenade| and |Gas Mask|) or |Flare|"
+    },	
+    { 
+        "name": "Communcations Key", 
+        "region": "Soldier Quarters",
+		"requires": []
+    },
+    { 
+        "name": "Note - Clement's Journal - Agony", 
+        "region": "Officer Quarters",
+		"requires": []
+    },  
+    { 
+        "name": "Note - Clement's Journal - No Word", 
+        "region": "Officer Quarters",
+		"requires": []
+    },     	
+    { 
+        "name": "Note - Clement's Journal - Routine Patrol", 
+        "region": "Officer Quarters",
+		"requires": ["Code - Clement"]
+    },   
+    { 
+        "name": "Note - Clement's Journal - Compelled", 
+        "region": "Soldier Quarters",
+		"requires": []
+    },  
+    { 
+        "name": "Note - Lambert's Journal - Part 1", 
+        "region": "Maintenance",
+		"requires": []
+    },   
+    { 
+        "name": "Note - Lambert's Journal - Part 2", 
+        "region": "Officer Quarters",
+		"requires": ["Code - Lambert"]
+    },
+    { 
+        "name": "Dog Tag - Friloux", 
+        "region": "Officer Quarters",
+		"requires": []
+    }, 
+    { 
+        "name": "Dog Tag - Batiste", 
+        "region": "Officer Quarters",
+		"requires": []
+    },    		
+    { 
+        "name": "Dog Tag - Delisle", 
+        "region": "Officer Quarters",
+		"requires": []
+    },  
+    { 
+        "name": "Dog Tag - Stafford", 
+        "region": "Maintenance",
+		"requires": "(|Torch| and |Lighter|) or (|Gas Grenade| and |Gas Mask|) or |Flare| or (|Pillbox Key| and (|Torch| and |Lighter|) or (|Gas Grenade| and |Gas Mask|) or |Flare|)" 
+    },	
+    { 
+        "name": "Dog Tag - Clement", 
+        "region": "Soldier Quarters",
+		"requires": []
+    }, 
+    { 
+        "name": "Dog Tag - Lambert", 
+        "region": "Roman Tunnels",
+		"requires": []
+    },    	
+    { 
+        "name": "Dog Tag - In Mission Storage", 
+        "region": "Officer Quarters",
+		"requires": []
+    }, 
+    { 
+        "name": "Dog Tag - Near Wine Cellar", 
+        "region": "Officer Quarters",
+		"requires": "(|Torch| and |Lighter|) or (|Gas Grenade| and |Gas Mask|) or |Flare|"
+    },	
+    { 
+        "name": "Dog Tag - In Hallway", 
+        "region": "Maintenance",
+		"requires": []
+    }, 
+    { 
+        "name": "Dog Tag - In Foreman's Quarters", 
+        "region": "Maintenance",
+		"requires": []
+    }, 
+    { 
+        "name": "Dog Tag - Cabinet in Changing Room", 
+        "region": "Maintenance",
+		"requires": "(|Torch| and |Lighter|) or (|Gas Grenade| and |Gas Mask|) or |Flare|"
+    },	
+    { 
+        "name": "Dog Tag - Tunnel #1", 
+        "region": "Maintenance",
+		"requires": "(|Torch| and |Lighter|) or (|Gas Grenade| and |Gas Mask|) or |Flare|"
+    },	
+    { 
+        "name": "Dog Tag - Tunnel #2", 
+        "region": "Maintenance",
+		"requires": "(|Torch| and |Lighter|) or (|Gas Grenade| and |Gas Mask|) or |Flare|"
+    },	 	
+    { 
+        "name": "Dog Tag - Tunnel #3", 
+        "region": "Maintenance",
+		"requires": "(|Torch| and |Lighter|) or (|Gas Grenade| and |Gas Mask|) or |Flare|"
+    },		
+    { 
+        "name": "Dog Tag - In Chapel", 
+        "region": "Maintenance",
+		"requires": "(|Torch| and |Lighter|) or (|Gas Grenade| and |Gas Mask|) or |Flare|"
+    },	
+    { 
+        "name": "Dog Tag - Locked Room", 
+        "region": "Maintenance",
+		"requires": "|Gun| or |Wrench|"
+    },    
+    { 
+        "name": "Dog Tag - In Barracks A", 
+        "region": "Soldier Quarters",
+		"requires": "(|Torch| and |Lighter|) or (|Gas Grenade| and |Gas Mask|) or |Flare|"
+    },	 		
+	{ 
+        "name": "Dog Tag - Hallway Near Barracks B", 
+        "region": "Soldier Quarters",
+		"requires": "(|Torch| and |Lighter|) or (|Gas Grenade| and |Gas Mask|) or |Flare|"
+    },	
+    { 
+        "name": "Dog Tag - Near Storage A Door", 
+        "region": "Arsenal",
+		"requires": []
+    },    
+    { 
+        "name": "Dog Tag - In Storage A", 
+        "region": "Arsenal",
+		"requires": ["Code - Arsenal"]
+    },
+	{ 
+        "name": "Rabbit Toy", 
+        "region": "Roman Tunnels",
+		"requires": []
+    },
+    { 
+        "name": "Flashlight", 
+        "region": "Officer Quarters",
+		"requires": []
+    },
+    { 
+        "name": "Pocket Watch", 
+        "region": "Officer Quarters",
+		"requires": []
+    },
+    { 
+        "name": "Wrench", 
+        "region": "Officer Quarters",
+		"requires": ["Code - Stafford"]
+    },
+    { 
+        "name": "Lockdown Wheel", 
+        "region": "Officer Quarters",
+		"requires": ["Code - Delisle"]
+    },
+    { 
+        "name": "Shotgun", 
+        "region": "Roman Tunnels",
+		"requires": "|Gun| or |Grenade|"
+    },
+    { 
+        "name": "Lighter", 
+        "region": "Officer Quarters",
+		"requires": ["Code - Giraud"]
+    },
+    { 
+        "name": "Gas Mask", 
+        "region": "Officer Quarters",
+		"requires": ["Code - Laval"]
+    },
+	{ 
+        "name": "Escape Bunker", 
+        "region": "Arena",
+		"requires": [],
+		"victory": true
+    }
+	
+]

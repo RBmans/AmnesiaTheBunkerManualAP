@@ -1,0 +1,176 @@
+[
+    { 
+        "name": "Flashlight", 
+        "category": "|Key Items|",
+        "progression": true 
+    },
+	
+   { 
+        "name": "Cutters", 
+        "category": "|Key Items|",
+        "progression": true 
+    },
+	
+   { 
+        "name": "Dynamite", 
+        "category": "|Key Items|",
+        "progression": true 
+    },
+	
+   { 
+        "name": "Detonator Handle", 
+        "category": "|Key Items|",
+        "progression": true 
+    },
+	
+   { 
+        "name": "Gun", 
+        "category": "|Weapon|",
+        "progression": true 
+    },
+	
+   { 
+        "name": "Wrench", 
+        "category": "|Key Items|",
+        "progression": true 
+    },
+	
+   { 
+        "name": "Lockdown Wheel", 
+        "category": "|Key Items|",
+        "progression": true 
+    },
+	
+   { 
+        "name": "Communications Key", 
+        "category": "|Key Items|",
+        "progression": true 
+    },
+		
+   { 
+        "name": "Pillbox Key", 
+        "category": "|Key Items|",
+        "progression": true 
+    },
+	
+   { 
+        "name": "Shotgun", 
+        "category": "|Weapon|",
+        "useful": true 
+    },
+	
+   { 
+        "name": "Gas Mask", 
+        "category": "|Key Items|",
+        "progression": true 
+    },
+	
+   { 
+        "name": "Lighter", 
+        "category": "|Key Items|",
+        "progression": true 
+    },
+	
+   { 
+        "name": "Pocket Bag", 
+        "category": "|Management|",
+        "useful": true,
+		"count": 7
+    },
+	
+   { 
+        "name": "Pocket Watch", 
+        "category": "|Management|",
+        "useful": true 
+    },
+	
+	
+   { 
+        "name": "Grenade", 
+        "category": "|Consumables|",
+        "progression": true 
+    },
+	
+   { 
+        "name": "Gas Grenade", 
+        "category": "|Consumables|",
+        "progression": true 
+    },
+   { 
+        "name": "Torch", 
+        "category": "|Consumables|",
+        "progression": true 
+    },
+   { 
+        "name": "Flare", 
+        "category": "|Consumables|",
+        "progression": true 
+    },
+    { 
+        "name": "Code - Friloux", 
+        "category": "|Codes|",
+        "progression": true 
+    },
+    { 
+        "name": "Code - Arsenal", 
+        "category": "|Codes|",
+        "progression": true 
+    },
+    { 
+        "name": "Code - Stafford", 
+        "category": "|Codes|",
+        "progression": true 
+    },
+    { 
+        "name": "Code - Bardin", 
+        "category": "|Codes|",
+        "progression": true 
+    },
+    { 
+        "name": "Code - Fortin", 
+        "category": "|Codes|",
+        "progression": true 
+    },
+    { 
+        "name": "Code - Clement", 
+        "category": "|Codes|",
+        "progression": true 
+    },
+    { 
+        "name": "Code - Auclair", 
+        "category": "|Codes|",
+        "progression": true 
+    },
+    { 
+        "name": "Code - Travers", 
+        "category": "|Codes|",
+        "progression": true 
+    },
+	{ 
+        "name": "Code - Lambert", 
+        "category": "|Codes|",
+        "progression": true 
+    },
+    { 
+        "name": "Code - Delisle", 
+        "category": "|Codes|",
+        "progression": true 
+    },
+    { 
+        "name": "Code - Giraud", 
+        "category": "|Codes|",
+        "progression": true 
+    },
+    { 
+        "name": "Code - Laval", 
+        "category": "|Codes|",
+        "progression": true 
+    },
+    { 
+        "name": "Code - Boucher", 
+        "category": "|Codes|",
+        "progression": true 
+    }
+
+
+]
