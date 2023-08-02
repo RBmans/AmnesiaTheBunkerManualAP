@@ -14,13 +14,13 @@
    { 
         "name": "Dynamite", 
         "category": "|Key Items|",
-        "progression": true 
+        "progression_skip_balancing": true 
     },
 	
    { 
         "name": "Detonator Handle", 
         "category": "|Key Items|",
-        "progression": true 
+        "progression_skip_balancing": true 
     },
 	
    { 
@@ -170,7 +170,21 @@
         "name": "Code - Boucher", 
         "category": "|Codes|",
         "progression": true 
+    },
+	{ 
+        "name": "Empty Bottle", 
+        "category": "|Consumables|",
+        "useful": true 
+    },
+	{ 
+        "name": "Petrol Bomb", 
+        "category": "|Consumables|",
+        "progression": true 
+    },
+	{ 
+        "name": "Fuel Bottle", 
+        "category": "|Consumables|",
+        "progression": true 
     }
-
 
 ]

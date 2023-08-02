@@ -1,66 +1,66 @@
 [
     { 
-        "name": "Photo 0", 
+        "name": "Photo - Prying Vent (in Mission Storage)", 
+        "region": "Central Bunker",
+        "requires": ["Code - Friloux"]
+    },
+	{ 
+        "name": "Photo - Clement and Lambert (in Clement's Locker)", 
+        "region": "Central Bunker",
+        "requires": ["Code - Clement", "Code - Friloux"]
+    },
+	{ 
+        "name": "Photo - Severed Hand (in Fournier's Room)", 
         "region": "Officer Quarters",
         "requires": []
     },
 	{ 
-        "name": "Photo 4", 
-        "region": "Officer Quarters",
-        "requires": ["Code - Clement"]
-    },
-	{ 
-        "name": "Photo 9", 
-        "region": "Officer Quarters",
-        "requires": []
-    },
-	{ 
-        "name": "Photo 13", 
+        "name": "Photo - Claw Marks (in Joubert's Room)", 
         "region": "Officer Quarters",
         "requires": []
     },
     { 
-        "name": "Photo 14", 
+        "name": "Photo - Reynard's Corpse (in Doctor's Office)", 
+        "region": "Central Bunker",
+        "requires": []
+    },
+	{ 
+        "name": "Photo - Excavating Tunnels (in Strategic Operations)", 
         "region": "Officer Quarters",
         "requires": []
     },
 	{ 
-        "name": "Photo 15", 
-        "region": "Officer Quarters",
-        "requires": []
-    },
-	{ 
-        "name": "Photo 10", 
+        "name": "Photo - Reading Documents (in Warden's Office)", 
         "region": "Prison",
         "requires": []
     },
 	{ 
         "name": "Map - Prison", 
         "region": "Prison",
-        "requires": []
+        "requires": ["Wrench"]
     },
 	{ 
-        "name": "Photo 2", 
+        "name": "Photo - Partying (in Darkroom)", 
         "region": "Soldier Quarters",
         "requires": []
     },
 	{ 
-        "name": "Photo 5", 
+        "name": "Photo - Lambert's Family (in Barracks B)", 
         "region": "Soldier Quarters",
         "requires": []
     },
 	{ 
-        "name": "Photo 6", 
+        "name": "Photo - Diagram of Roman Tunnels (in Mess Hall)", 
+        "region": "Soldier Quarters",
+        "requires": ["Wrench"]
+    },
+	{ 
+        "name": "Photo - Sleeping Arrangements (in Clerk's Office)", 
         "region": "Soldier Quarters",
         "requires": []
     },
 	{ 
-        "name": "Photo 8", 
-        "region": "Soldier Quarters",
-        "requires": []
-    },
-	{ 
-        "name": "Photo 11", 
+        "name": "Photo - Diagram of Electrical Switches (in Hallway)", 
         "region": "Soldier Quarters",
         "requires": []
     },
@@ -70,12 +70,12 @@
         "requires": []
     },
 	{ 
-        "name": "Photo 3", 
+        "name": "Photo - Petrol Bombs (in Foreman's Quarters)", 
         "region": "Maintenance",
         "requires": []
     },
 	{ 
-        "name": "Photo 12", 
+        "name": "Photo - Preparing Corpses (in Clerk's Office)", 
         "region": "Maintenance",
         "requires": []
     },
@@ -85,7 +85,7 @@
         "requires": []
     },
 	{ 
-        "name": "Photo 1", 
+        "name": "Photo - Cutting Tripwire (in Clerk's Office)", 
         "region": "Arsenal",
         "requires": []
     },
@@ -95,7 +95,7 @@
         "requires": []
     },
 	{ 
-        "name": "Photo 7", 
+        "name": "Photo - Blasting Door (in Save Room)", 
         "region": "Roman Tunnels",
         "requires": []
     },
@@ -106,8 +106,8 @@
     },
 	{ 
         "name": "Pocket Bag - Boucher's Locker", 
-        "region": "Officer Quarters",
-        "requires": ["Code - Boucher"]
+        "region": "Central Bunker",
+        "requires": ["Code - Boucher", "Code - Friloux"]
     },
     { 
         "name": "Pocket Bag - Roman Tunnels", 
@@ -115,48 +115,48 @@
     },
 	{ 
         "name": "Item from Travers' Locker", 
-        "region": "Officer Quarters",
-        "requires": ["Code - Travers"]
+        "region": "Central Bunker",
+        "requires": ["Code - Travers", "Code - Friloux"]
     },
 	{ 
         "name": "Item from Auclair's Locker", 
-        "region": "Officer Quarters",
-        "requires": ["Code - Auclair"]
+        "region": "Central Bunker",
+        "requires": ["Code - Auclair", "Code - Friloux"]
     },
 	{ 
         "name": "Item from Fortin's Locker", 
-        "region": "Officer Quarters",
-        "requires": ["Code - Fortin"]
+        "region": "Central Bunker",
+        "requires": ["Code - Fortin", "Code - Friloux"]
     },
 	{ 
         "name": "Item from Bardin's Locker", 
-        "region": "Officer Quarters",
-        "requires": ["Code - Bardin"]
+        "region": "Central Bunker",
+        "requires": ["Code - Bardin", "Code - Friloux"]
     },
     { 
         "name": "Pillbox Key", 
         "region": "Maintenance",
-		"requires": "(|Torch| and |Lighter|) or (|Gas Grenade| and |Gas Mask|) or |Flare|"
+		"requires": "|Lighter| and (|Torch| or |Petrol Bomb|) or (|Gas Grenade| and |Gas Mask|) or |Flare|"
     },	
     { 
-        "name": "Communcations Key", 
+        "name": "Communications Key", 
         "region": "Soldier Quarters",
 		"requires": []
     },
     { 
         "name": "Note - Clement's Journal - Agony", 
-        "region": "Officer Quarters",
+        "region": "Central Bunker",
 		"requires": []
     },  
     { 
         "name": "Note - Clement's Journal - No Word", 
-        "region": "Officer Quarters",
-		"requires": []
+        "region": "Central Bunker",
+		"requires": ["Code - Friloux"]
     },     	
     { 
         "name": "Note - Clement's Journal - Routine Patrol", 
-        "region": "Officer Quarters",
-		"requires": ["Code - Clement"]
+        "region": "Central Bunker",
+		"requires": ["Code - Clement", "Code - Friloux"]
     },   
     { 
         "name": "Note - Clement's Journal - Compelled", 
@@ -175,12 +175,12 @@
     },
     { 
         "name": "Dog Tag - Friloux", 
-        "region": "Officer Quarters",
+        "region": "Central Bunker",
 		"requires": []
     }, 
     { 
         "name": "Dog Tag - Batiste", 
-        "region": "Officer Quarters",
+        "region": "Central Bunker",
 		"requires": []
     },    		
     { 
@@ -191,7 +191,7 @@
     { 
         "name": "Dog Tag - Stafford", 
         "region": "Maintenance",
-		"requires": "(|Torch| and |Lighter|) or (|Gas Grenade| and |Gas Mask|) or |Flare| or (|Pillbox Key| and (|Torch| and |Lighter|) or (|Gas Grenade| and |Gas Mask|) or |Flare|)" 
+		"requires": "(|Grenade| and (|Lighter| and (|Torch| or |Petrol Bomb|) or (|Gas Grenade| and |Gas Mask|) or |Flare|)) or (|Pillbox Key| and (|Lighter| and (|Torch| or |Petrol Bomb|) or (|Gas Grenade| and |Gas Mask|) or |Flare|))" 
     },	
     { 
         "name": "Dog Tag - Clement", 
@@ -205,13 +205,13 @@
     },    	
     { 
         "name": "Dog Tag - In Mission Storage", 
-        "region": "Officer Quarters",
-		"requires": []
+        "region": "Central Bunker",
+		"requires": ["Code - Friloux"]
     }, 
     { 
         "name": "Dog Tag - Near Wine Cellar", 
         "region": "Officer Quarters",
-		"requires": "(|Torch| and |Lighter|) or (|Gas Grenade| and |Gas Mask|) or |Flare|"
+		"requires": "|Lighter| and (|Torch| or |Petrol Bomb|) or (|Gas Grenade| and |Gas Mask|) or |Flare|"
     },	
     { 
         "name": "Dog Tag - In Hallway", 
@@ -226,42 +226,42 @@
     { 
         "name": "Dog Tag - Cabinet in Changing Room", 
         "region": "Maintenance",
-		"requires": "(|Torch| and |Lighter|) or (|Gas Grenade| and |Gas Mask|) or |Flare|"
+		"requires": "|Lighter| and (|Torch| or |Petrol Bomb|) or (|Gas Grenade| and |Gas Mask|) or |Flare|"
     },	
     { 
         "name": "Dog Tag - Tunnel #1", 
         "region": "Maintenance",
-		"requires": "(|Torch| and |Lighter|) or (|Gas Grenade| and |Gas Mask|) or |Flare|"
+		"requires": "|Lighter| and (|Torch| or |Petrol Bomb|) or (|Gas Grenade| and |Gas Mask|) or |Flare|"
     },	
     { 
         "name": "Dog Tag - Tunnel #2", 
         "region": "Maintenance",
-		"requires": "(|Torch| and |Lighter|) or (|Gas Grenade| and |Gas Mask|) or |Flare|"
+		"requires": "|Lighter| and (|Torch| or |Petrol Bomb|) or (|Gas Grenade| and |Gas Mask|) or |Flare|"
     },	 	
     { 
         "name": "Dog Tag - Tunnel #3", 
         "region": "Maintenance",
-		"requires": "(|Torch| and |Lighter|) or (|Gas Grenade| and |Gas Mask|) or |Flare|"
+		"requires": "|Lighter| and (|Torch| or |Petrol Bomb|) or (|Gas Grenade| and |Gas Mask|) or |Flare|"
     },		
     { 
         "name": "Dog Tag - In Chapel", 
         "region": "Maintenance",
-		"requires": "(|Torch| and |Lighter|) or (|Gas Grenade| and |Gas Mask|) or |Flare|"
+		"requires": "|Lighter| and (|Torch| or |Petrol Bomb|) or (|Gas Grenade| and |Gas Mask|) or |Flare|"
     },	
     { 
-        "name": "Dog Tag - Locked Room", 
+        "name": "Dog Tag - Break Room", 
         "region": "Maintenance",
-		"requires": "|Gun| or |Wrench|"
+		"requires": "|Gun| or |Wrench| or |Grenade|"
     },    
     { 
         "name": "Dog Tag - In Barracks A", 
         "region": "Soldier Quarters",
-		"requires": "(|Torch| and |Lighter|) or (|Gas Grenade| and |Gas Mask|) or |Flare|"
+		"requires": "|Lighter| and (|Torch| or |Petrol Bomb|) or (|Gas Grenade| and |Gas Mask|) or |Flare|"
     },	 		
 	{ 
         "name": "Dog Tag - Hallway Near Barracks B", 
         "region": "Soldier Quarters",
-		"requires": "(|Torch| and |Lighter|) or (|Gas Grenade| and |Gas Mask|) or |Flare|"
+		"requires": "|Lighter| and (|Torch| or |Petrol Bomb|) or (|Gas Grenade| and |Gas Mask|) or |Flare|"
     },	
     { 
         "name": "Dog Tag - Near Storage A Door", 
@@ -273,30 +273,40 @@
         "region": "Arsenal",
 		"requires": ["Code - Arsenal"]
     },
+    { 
+        "name": "Dynamite", 
+        "region": "Arsenal",
+		"requires": ["Code - Arsenal"]
+    },
 	{ 
         "name": "Rabbit Toy", 
         "region": "Roman Tunnels",
 		"requires": []
     },
+	{ 
+        "name": "Detonator Handle", 
+        "region": "Roman Tunnels",
+		"requires": []
+    },
     { 
         "name": "Flashlight", 
-        "region": "Officer Quarters",
+        "region": "Central Bunker",
 		"requires": []
     },
     { 
         "name": "Pocket Watch", 
-        "region": "Officer Quarters",
+        "region": "Central Bunker",
 		"requires": []
     },
     { 
         "name": "Wrench", 
-        "region": "Officer Quarters",
-		"requires": ["Code - Stafford"]
+        "region": "Central Bunker",
+		"requires": ["Code - Stafford", "Code - Friloux"]
     },
     { 
         "name": "Lockdown Wheel", 
-        "region": "Officer Quarters",
-		"requires": ["Code - Delisle"]
+        "region": "Central Bunker",
+		"requires": ["Code - Delisle", "Code - Friloux"]
     },
     { 
         "name": "Shotgun", 
@@ -305,14 +315,24 @@
     },
     { 
         "name": "Lighter", 
-        "region": "Officer Quarters",
-		"requires": ["Code - Giraud"]
+        "region": "Central Bunker",
+		"requires": ["Code - Giraud", "Code - Friloux"]
     },
     { 
         "name": "Gas Mask", 
-        "region": "Officer Quarters",
-		"requires": ["Code - Laval"]
+        "region": "Central Bunker",
+		"requires": ["Code - Laval", "Code - Friloux"]
     },
+	{ 
+        "name": "Cutters", 
+        "region": "Prison",
+		"requires": ["Wrench"]
+    },
+	{
+		"name": "Arsenal Code",
+		"region": "Soldier Quarters",
+		"requires": ["Communications Key"]
+	},
 	{ 
         "name": "Escape Bunker", 
         "region": "Arena",

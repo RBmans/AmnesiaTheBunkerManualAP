@@ -4,3 +4,5 @@ name: RBunkerM
 Manual_thebunker_rbman:
   progression_balancing: 50
   accessibility: items
+  start_inventory:
+    Code - Friloux: 1

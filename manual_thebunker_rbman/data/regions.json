@@ -1,12 +1,17 @@
 {
-    "Officer Quarters": {
-        "connects_to": ["Arsenal", "Maintenance", "Prison", "Soldier Quarters", "Arena"],
+	"Central Bunker": {
+		"connects_to": ["Officer Quarters", "Soldier Quarters", "Arsenal", "Arena"],
 		"starting": true
+	},
+	
+    "Officer Quarters": {
+		"requires": ["Code - Friloux"],
+        "connects_to": ["Central Bunker", "Maintenance"]
     },
 	
 	"Arsenal": {
 		"requires": ["Lockdown Wheel"],
-		"connects_to": ["Officer Quarters", "Roman Tunnels"]
+		"connects_to": ["Central Bunker", "Roman Tunnels"]
 	},
 	
 	"Maintenance": {
@@ -16,12 +21,12 @@
 	
 	"Prison": {
 		"requires": ["Lockdown Wheel"],
-		"connects_to": ["Officer Quarters"]
+		"connects_to": ["Central Bunker"]
 	},
 	
 	"Soldier Quarters": {
 		"requires": ["Lockdown Wheel"],
-		"connects_to": ["Officer Quarters"]
+		"connects_to": ["Central Bunker"]
 	},
 	
 	"Roman Tunnels": {

@@ -158,6 +158,8 @@ class DataValidation():
             # if the item is already progression, no need to check
             if "progression" in item and item["progression"]:
                 continue
+            elif "progression_skip_balancing" in item and item["progression_skip_balancing"]:
+                continue
 
             # check location requires for the presence of item name
             for location in DataValidation.location_table:
