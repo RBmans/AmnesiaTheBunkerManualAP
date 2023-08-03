@@ -10,15 +10,4 @@ starting_items = game_table["starting_items"] if "starting_items" in game_table 
 # - The player name is meant to be a small differentiator, so we just apply a flat multiplier for that
 
 # 100m + 70m + 10m, which should put all Manual games comfortably in the billions
-starting_index = (ord(game_table["game"][:1]) * 100000000) + \
-    (ord(game_table["game"][1:2]) * 70000000) + \
-    (ord(game_table["game"][-1:]) * 10000000)
-
-if len(game_table["game"]) > 3:
-    for index in range(2, len(game_table["game"]) - 1):
-        multiplier = 100000
-
-        starting_index += (ord(game_table["game"][index:index+1]) * multiplier)
-
-for index in range(0, len(game_table["player"])):
-    starting_index += (ord(game_table["player"][index:index+1]) * 1000)
+starting_index = 867539000

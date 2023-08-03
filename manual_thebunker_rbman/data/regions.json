@@ -10,32 +10,32 @@
     },
 	
 	"Arsenal": {
-		"requires": ["Lockdown Wheel"],
+		"requires": ["Code - Friloux", "Lockdown Wheel"],
 		"connects_to": ["Central Bunker", "Roman Tunnels"]
 	},
 	
 	"Maintenance": {
-		"requires": ["Lockdown Wheel"],
+		"requires": ["Code - Friloux", "Lockdown Wheel"],
 		"connects_to": ["Officer Quarters"]
 	},
 	
 	"Prison": {
-		"requires": ["Lockdown Wheel"],
+		"requires": ["Code - Friloux", "Lockdown Wheel"],
 		"connects_to": ["Central Bunker"]
 	},
 	
 	"Soldier Quarters": {
-		"requires": ["Lockdown Wheel"],
+		"requires": ["Code - Friloux", "Lockdown Wheel"],
 		"connects_to": ["Central Bunker"]
 	},
 	
 	"Roman Tunnels": {
-		"requires": ["Lockdown Wheel", "Cutters"],
+		"requires": ["Code - Friloux", "Lockdown Wheel", "Cutters"],
 		"connects_to": ["Arsenal"]
 	},
 	
 	"Arena": {
-		"requires": ["Detonator Handle", "Dynamite"]
+		"requires": ["Code - Friloux", "Detonator Handle", "Dynamite"]
 	}
 	
 }

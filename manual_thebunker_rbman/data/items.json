@@ -1,190 +1,189 @@
 [
     { 
         "name": "Flashlight", 
-        "category": "|Key Items|",
+        "category": ["Key Items"],
         "progression": true 
     },
 	
    { 
         "name": "Cutters", 
-        "category": "|Key Items|",
+        "category": ["Key Items"],
         "progression": true 
     },
 	
    { 
         "name": "Dynamite", 
-        "category": "|Key Items|",
+        "category": ["Key Items"],
         "progression_skip_balancing": true 
     },
 	
    { 
         "name": "Detonator Handle", 
-        "category": "|Key Items|",
+        "category": ["Key Items"],
         "progression_skip_balancing": true 
     },
 	
    { 
         "name": "Gun", 
-        "category": "|Weapon|",
+        "category": ["Weapon"],
         "progression": true 
     },
 	
    { 
         "name": "Wrench", 
-        "category": "|Key Items|",
+        "category": ["Key Items"],
         "progression": true 
     },
 	
    { 
         "name": "Lockdown Wheel", 
-        "category": "|Key Items|",
+        "category": ["Key Items"],
         "progression": true 
     },
 	
    { 
         "name": "Communications Key", 
-        "category": "|Key Items|",
+        "category": ["Key Items"],
         "progression": true 
     },
 		
    { 
         "name": "Pillbox Key", 
-        "category": "|Key Items|",
+        "category": ["Key Items"],
         "progression": true 
     },
 	
    { 
         "name": "Shotgun", 
-        "category": "|Weapon|",
-        "useful": true 
+        "category": ["Weapon"],
+        "progression": true 
     },
 	
    { 
         "name": "Gas Mask", 
-        "category": "|Key Items|",
+        "category": ["Key Items"],
         "progression": true 
     },
 	
    { 
         "name": "Lighter", 
-        "category": "|Key Items|",
+        "category": ["Key Items"],
         "progression": true 
     },
 	
    { 
         "name": "Pocket Bag", 
-        "category": "|Management|",
+        "category": ["Management"],
         "useful": true,
 		"count": 7
     },
 	
    { 
         "name": "Pocket Watch", 
-        "category": "|Management|",
+        "category": ["Management"],
         "useful": true 
     },
 	
 	
    { 
         "name": "Grenade", 
-        "category": "|Consumables|",
+        "category": ["Consumables"],
         "progression": true 
     },
 	
    { 
         "name": "Gas Grenade", 
-        "category": "|Consumables|",
+        "category": ["Consumables"],
         "progression": true 
     },
    { 
         "name": "Torch", 
-        "category": "|Consumables|",
+        "category": ["Consumables"],
         "progression": true 
     },
    { 
         "name": "Flare", 
-        "category": "|Consumables|",
+        "category": ["Consumables"],
         "progression": true 
     },
     { 
         "name": "Code - Friloux", 
-        "category": "|Codes|",
+        "category": ["Codes"],
         "progression": true 
     },
     { 
         "name": "Code - Arsenal", 
-        "category": "|Codes|",
+        "category": ["Codes"],
         "progression": true 
     },
     { 
         "name": "Code - Stafford", 
-        "category": "|Codes|",
+        "category": ["Codes"],
         "progression": true 
     },
     { 
         "name": "Code - Bardin", 
-        "category": "|Codes|",
+        "category": ["Codes"],
         "progression": true 
     },
     { 
         "name": "Code - Fortin", 
-        "category": "|Codes|",
+        "category": ["Codes"],
         "progression": true 
     },
     { 
         "name": "Code - Clement", 
-        "category": "|Codes|",
+        "category": ["Codes"],
         "progression": true 
     },
     { 
         "name": "Code - Auclair", 
-        "category": "|Codes|",
+        "category": ["Codes"],
         "progression": true 
     },
     { 
         "name": "Code - Travers", 
-        "category": "|Codes|",
+        "category": ["Codes"],
         "progression": true 
     },
 	{ 
         "name": "Code - Lambert", 
-        "category": "|Codes|",
+        "category": ["Codes"],
         "progression": true 
     },
     { 
         "name": "Code - Delisle", 
-        "category": "|Codes|",
+        "category": ["Codes"],
         "progression": true 
     },
     { 
         "name": "Code - Giraud", 
-        "category": "|Codes|",
+        "category": ["Codes"],
         "progression": true 
     },
     { 
         "name": "Code - Laval", 
-        "category": "|Codes|",
+        "category": ["Codes"],
         "progression": true 
     },
     { 
         "name": "Code - Boucher", 
-        "category": "|Codes|",
+        "category": ["Codes"],
         "progression": true 
     },
 	{ 
         "name": "Empty Bottle", 
-        "category": "|Consumables|",
-        "useful": true 
+        "category": ["Consumables"]
     },
 	{ 
         "name": "Petrol Bomb", 
-        "category": "|Consumables|",
+        "category": ["Consumables"],
         "progression": true 
     },
 	{ 
         "name": "Fuel Bottle", 
-        "category": "|Consumables|",
-        "progression": true 
+        "category": ["Consumables"],
+        "useful": true 
     }
 
 ]
