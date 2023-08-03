@@ -51,7 +51,7 @@
         "name": "Shotgun", 
         "region": "Roman Tunnels",
 		"category": ["Roman Tunnels"],
-		"requires": "|Gun| or |Grenade|"
+		"requires": "|Gun| or |Grenade| or |Shotgun|"
     },
     { 
         "name": "Lighter", 
@@ -308,7 +308,7 @@
         "name": "Dog Tag - Stafford", 
         "region": "Maintenance",
 		"category": ["Maintenance"],
-		"requires": "(|Grenade| and (|Lighter| and (|Torch| or |Petrol Bomb|) or (|Gas Grenade| and |Gas Mask|) or |Flare|)) or (|Pillbox Key| and (|Lighter| and (|Torch| or |Petrol Bomb|) or (|Gas Grenade| and |Gas Mask|) or |Flare|))" 
+		"requires": "|Lighter| and (|Torch| or |Petrol Bomb|) or (|Gas Grenade| and |Gas Mask|) or |Flare|" 
     },	
     { 
         "name": "Dog Tag - Clement", 

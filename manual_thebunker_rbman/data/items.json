@@ -50,7 +50,7 @@
    { 
         "name": "Pillbox Key", 
         "category": ["Key Items"],
-        "progression": true 
+        "useful": true 
     },
 	
    { 
