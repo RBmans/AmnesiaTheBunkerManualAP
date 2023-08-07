@@ -5,7 +5,9 @@ Implementation of Amnesia The Bunker into Archipelago Manual
 
 **Game:** Amnesia: The Bunker
 
-**Checks:** Key Items (Flashlight, Gun, Cutters, etc.), Photos, Notes with VO, Dog Tags, Locker Items, Non-Randomized Pocket Bags, Keys (Receiving a consumable item, such as a Grenade, allows you to use whatever grenades you can find available).
+**Checks:** Key Items (Flashlight, Gun, Cutters, etc.), Photos, Notes with VO, Dog Tags, Locker Items, Non-Randomized Pocket Bags, Keys 
+
+**Items:** Key Items, Keys, Pocket Bags, Dog Tag Codes, Consumables (Receiving a consumable item, such as a Grenade, allows you to use as many grenades as you can find in the world, in addition to the ones located in the save room).
 
 **Victory Condition:** Use the detonator handle and the dynamite to escape the bunker.
 
