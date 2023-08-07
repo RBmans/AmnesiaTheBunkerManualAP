@@ -1,3 +1,5 @@
+(Companion PopTracker pack can be found (here)[https://github.com/RBmans/poptracker-atb-manualAP]
+
 # AmnesiaTheBunkerManualAP
 Implementation of Amnesia The Bunker into Archipelago Manual
 
