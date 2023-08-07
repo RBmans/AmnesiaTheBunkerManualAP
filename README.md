@@ -5,11 +5,9 @@ Implementation of Amnesia The Bunker into Archipelago Manual
 
 **Game:** Amnesia: The Bunker
 
-**Checks:** Key Items (Flashlight, Gun, Cutters, etc.), Photos, Notes with VO, Dog Tags, Locker Items, Non-Randomized Pocket Bags, Keys
+**Checks:** Key Items (Flashlight, Gun, Cutters, etc.), Photos, Notes with VO, Dog Tags, Locker Items, Non-Randomized Pocket Bags, Keys (Receiving a consumable item, such as a Grenade, allows you to use whatever grenades you can find available).
 
-**Key Items:** Basically everything except for a few consumables and the shotgun. Thanks open-ended game design! (Receiving a consumable item, such as a Grenade, allows you to use whatever grenades you can find available).
-
-**Victory Condition:** Receive the detonator handle and the dynamite to escape the bunker.
+**Victory Condition:** Use the detonator handle and the dynamite to escape the bunker.
 
 **Notes:** This has been created with the use of the Manual AP Implementation Add-On for Bunker. [You can find the workshop add-on here!](https://steamcommunity.com/sharedfiles/filedetails/?id=3014611969) 
 
