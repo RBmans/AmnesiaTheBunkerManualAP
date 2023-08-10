@@ -3,11 +3,6 @@
     "player": "rbman",
 
     "filler_item_name": "1 Bullet",
-
-    "starting_items": [
-        {
-            "items": ["Flashlight"]
-        }
        
     ]
 }
