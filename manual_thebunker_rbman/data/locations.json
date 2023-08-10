@@ -283,7 +283,7 @@
     { 
         "name": "Note - Lambert's Journal - Part 2", 
         "region": "Officer Quarters",
-		"category": ["Officer Quarters"],
+		"category": ["Central Bunker"],
 		"requires": ["Code - Lambert"]
     },
     { 

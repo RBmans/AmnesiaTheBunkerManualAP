@@ -184,6 +184,24 @@
         "name": "Fuel Bottle", 
         "category": ["Consumables"],
         "useful": true 
+    },
+	{ 
+        "name": "No Sprint for 5 Minutes", 
+        "category": ["Traps"],
+        "trap": true, 
+		"count": 3
+    },
+	{ 
+        "name": "Charge Flashlight Constantly for 30 Seconds", 
+        "category": ["Traps"],
+        "trap": true, 
+		"count": 3
+    },
+	{ 
+        "name": "No Shooting for 5 Minutes", 
+        "category": ["Traps"],
+        "trap": true, 
+		"count": 3
     }
 
 ]
