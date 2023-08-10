@@ -11,7 +11,7 @@ Implementation of Amnesia The Bunker into Archipelago Manual
 
 **Victory Condition:** Use the detonator handle and the dynamite to escape the bunker.
 
-**Notes:** This has been created with the use of the Manual AP Implementation Add-On for Bunker. [You can find the workshop add-on here!](https://steamcommunity.com/sharedfiles/filedetails/?id=3014611969) 
+**Notes:** This has been created with the use of the Manual AP Companion Add-On for Bunker. [You can find the workshop add-on here!](https://steamcommunity.com/sharedfiles/filedetails/?id=3014611969) 
 
 It changes the save room to contain every item in the game, so when you receive the item, you can grab it from the save room if you do not already have it in your possession. The Arsenal code requires you to use the new radio that has been placed in the corner of the room by turning it on, off, and then on again (I am bad at HPL3 scripting I apologize for the jank).
 
