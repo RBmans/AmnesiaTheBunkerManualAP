@@ -5,5 +5,5 @@ Manual_thebunker_rbman:
   progression_balancing: 50
   accessibility: items
   start_inventory:
-    Code - Friloux: 1
-    Flashlight: 1
+      "Code - Friloux": 1
+      "Flashlight": 1
