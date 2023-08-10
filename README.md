@@ -17,8 +17,6 @@ It changes the save room to contain every item in the game, so when you receive 
 
 The most important thing to note is that **I have not included Fuel as part of this implementation.** I did not want to put players into a situation where they are forced to do areas in the complete dark due to not having fuel to power the generator. Whatever fuel you find in the game, you are free to use! I also have not included bandages and medkits for similar reasons.
 
-Unfortunately, the randomized Pocket Bags are not locations, only the three bags that are always placed in the same place. I thought about adding them, but accounting for the variety of locations and what you logically require to reach those was too difficult for me to implement.
-
 Due to the very open-nature and experimental aspect of the game, not every single angle of attack has been considered, just the common ones. One consideration I have made is changing the amount of bricks that spawn in certain locations, to make certain doors always breakable without requiring grenades/shotgun (this includes locked doors in the Soldier Quarters as well as the Arsenal).
 
 Another example, when it comes to dealing with rats (whether it is passing by them or checking the dog tags on the bodies they are around), this expects you to either have a lighter with a torch (or a petrol bomb), or a gas mask and gas grenade, or flares. Technically, you are able to use your gun to clear out rats, but due to the implications of using your gun in the bunker, I did not add this as a consideration, so you should never be forced to do this.
