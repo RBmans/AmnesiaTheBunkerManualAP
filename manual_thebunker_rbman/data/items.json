@@ -186,6 +186,11 @@
         "useful": true 
     },
 	{ 
+        "name": "Code - Milliard", 
+        "category": ["Codes"],
+        "useful": true 
+    },
+	{ 
         "name": "No Sprint for 5 Minutes", 
         "category": ["Traps"],
         "trap": true, 
@@ -202,6 +207,7 @@
         "category": ["Traps"],
         "trap": true, 
 		"count": 3
-    }
+    },
+	
 
 ]

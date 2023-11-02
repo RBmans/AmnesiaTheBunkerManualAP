@@ -170,13 +170,13 @@
         "name": "Photo - Reading Documents (in Warden's Office)", 
         "region": "Prison",
 		"category": ["Prison"],
-        "requires": []
+        "requires": ["Wrench"]
     },
 	{ 
         "name": "Map - Prison", 
         "region": "Prison",
 		"category": ["Prison"],
-        "requires": ["Wrench"]
+        "requires": []
     },
 	{ 
         "name": "Photo - Partying (in Darkroom)", 
@@ -405,6 +405,12 @@
         "region": "Arsenal",
 		"category": ["Arsenal"],
 		"requires": ["Code - Arsenal"]
+    },
+	{ 
+        "name": "Dog Tag - NW Prison Cell", 
+        "region": "Prison",
+		"category": ["Prison"],
+		"requires": ["Wrench"]
     },
 	{ 
         "name": "Escape Bunker", 
