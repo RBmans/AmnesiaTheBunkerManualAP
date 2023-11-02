@@ -207,7 +207,5 @@
         "category": ["Traps"],
         "trap": true, 
 		"count": 3
-    },
-	
-
+    }
 ]
