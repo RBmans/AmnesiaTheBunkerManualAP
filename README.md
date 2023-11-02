@@ -22,7 +22,3 @@ Due to the very open-nature and experimental aspect of the game, not every singl
 Another example, when it comes to dealing with rats (whether it is passing by them or checking the dog tags on the bodies they are around), this expects you to either have a lighter with a torch (or a petrol bomb), or a gas mask and gas grenade, or flares. Technically, you are able to use your gun to clear out rats, but due to the implications of using your gun in the bunker, I did not add this as a consideration, so you should never be forced to do this.
 
 (On the topic of rats, I have not put any special considerations to passing by the rats on the way to maintenance or passing by the ones in Arsenal. These rats are either tankable or easily killable with items around your character, so I did not see a need to put special requirements on them. I have added extra bandages in the save room to account for this.)
-
--------------------------------------------------------------------------------------------
-
-**LOGIC NOTE:** The body near the Wine Cellar only has rats spawn near it after you obtain the lockdown wheel, which means you can grab the dog tag without a way to get rid of rats if you do it early. However, if you forget (or get the wheel early), you can no longer get the code without a way to remove the rats, so I opted to make that location require a way to remove the rats even though it is possible to get it without. So I mean, go ahead and break logic, it's one check it's fine lol
