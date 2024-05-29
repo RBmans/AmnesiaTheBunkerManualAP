@@ -1,6 +1,6 @@
 # Object classes from AP core, to represent an entire MultiWorld and this individual World that's part of it
 from worlds.AutoWorld import World
-from BaseClasses import MultiWorld
+from BaseClasses import MultiWorld, CollectionState
 
 # Object classes from Manual -- extending AP core -- representing items and locations that are used in generation
 from ..Items import ManualItem
@@ -19,9 +19,10 @@ from ..Helpers import is_option_enabled, get_option_value
 ########################################################################################
 ## Order of method calls when the world generates:
 ##    1. create_regions - Creates regions and locations
-##    2. set_rules - Creates rules for accessing regions and locations
-##    3. generate_basic - Creates the item pool and runs any place_item options
-##    4. pre_fill - Creates the victory location
+##    2. create_items - Creates the item pool
+##    3. set_rules - Creates rules for accessing regions and locations
+##    4. generate_basic - Runs any post item pool options, like place item/category
+##    5. pre_fill - Creates the victory location
 ##
 ## The create_item method is used by plando and start_inventory settings to create an item from an item name.
 ## The fill_slot_data method will be used to send data to the Manual client for later use, like deathlink.
@@ -29,13 +30,56 @@ from ..Helpers import is_option_enabled, get_option_value
 
 
 
-# Called before regions and locations are created. Not clear why you'd want this, but it's here.
+# Called before regions and locations are created. Not clear why you'd want this, but it's here. Victory location is included, but Victory event is not placed yet.
 def before_create_regions(world: World, multiworld: MultiWorld, player: int):
     pass
 
-# Called after regions and locations are created, in case you want to see or modify that information.
+# Called after regions and locations are created, in case you want to see or modify that information. Victory location is included.
 def after_create_regions(world: World, multiworld: MultiWorld, player: int):
-    pass
+    # Use this hook to remove locations from the world
+    locationNamesToRemove = [] # List of location names
+
+    # Add your code here to calculate which locations to remove
+
+    for region in multiworld.regions:
+        if region.player == player:
+            for location in list(region.locations):
+                if location.name in locationNamesToRemove:
+                    region.locations.remove(location)
+    if hasattr(multiworld, "clear_location_cache"):
+        multiworld.clear_location_cache()
+
+# The item pool before starting items are processed, in case you want to see the raw item pool at that stage
+def before_create_items_starting(item_pool: list, world: World, multiworld: MultiWorld, player: int) -> list:
+    return item_pool
+
+# The item pool after starting items are processed but before filler is added, in case you want to see the raw item pool at that stage
+def before_create_items_filler(item_pool: list, world: World, multiworld: MultiWorld, player: int) -> list:
+    # Use this hook to remove items from the item pool
+    itemNamesToRemove = [] # List of item names
+
+    # Add your code here to calculate which items to remove.
+    #
+    # Because multiple copies of an item can exist, you need to add an item name
+    # to the list multiple times if you want to remove multiple copies of it.
+
+    for itemName in itemNamesToRemove:
+        item = next(i for i in item_pool if i.name == itemName)
+        item_pool.remove(item)
+
+    return item_pool
+
+    # Some other useful hook options:
+
+    ## Place an item at a specific location
+    # location = next(l for l in multiworld.get_unfilled_locations(player=player) if l.name == "Location Name")
+    # item_to_place = next(i for i in item_pool if i.name == "Item Name")
+    # location.place_locked_item(item_to_place)
+    # item_pool.remove(item_to_place)
+
+# The complete item pool prior to being set for generation is provided here, in case you want to make changes to it
+def after_create_items(item_pool: list, world: World, multiworld: MultiWorld, player: int) -> list:
+    return item_pool
 
 # Called before rules for accessing regions and locations are created. Not clear why you'd want this, but it's here.
 def before_set_rules(world: World, multiworld: MultiWorld, player: int):
@@ -43,60 +87,23 @@ def before_set_rules(world: World, multiworld: MultiWorld, player: int):
 
 # Called after rules for accessing regions and locations are created, in case you want to see or modify that information.
 def after_set_rules(world: World, multiworld: MultiWorld, player: int):
-    pass
+    # Use this hook to modify the access rules for a given location
 
-# The complete item pool prior to being set for generation is provided here, in case you want to make changes to it
-def before_generate_basic(item_pool: list, world: World, multiworld: MultiWorld, player: int) -> list:
-    # import random
+    def Example_Rule(state: CollectionState) -> bool:
+        # Calculated rules take a CollectionState object and return a boolean
+        # True if the player can access the location
+        # CollectionState is defined in BaseClasses
+        return True
 
-    # total_characters = get_option_value(multiworld, player, "total_characters_to_win_with") or 50
+    ## Common functions:
+    # location = world.get_location(location_name, player)
+    # location.access_rule = Example_Rule
 
-    # if total_characters < 10 or total_characters > 50:
-    #     total_characters = 50
-
-    # # shuffle the character item names and pull a subset with a maximum for the option we provided
-    # character_names = [name for name in world.item_names]
-    # random.shuffle(character_names)
-    # character_names = character_names[0:total_characters]
-
-    # # remove any items that have been added that don't have those item names
-    # item_pool = [item for item in item_pool if item.name in character_names]
-    
-    # # remove any locations that have been added that aren't for those items
-    # world.location_id_to_name = {id: name for (id, name) in world.location_id_to_name.items() if name.replace("Beat the Game - ", "") in character_names}
-    # world.location_name_to_id = {name: id for (id, name) in world.location_id_to_name.items()}
-    # world.location_names = world.location_name_to_id.keys()
-
-    # # remove the locations above from the multiworld as well
-    # multiworld.clear_location_cache()
-    
-    # for region in multiworld.regions:
-    #     locations_to_remove_from_region = []
-
-    #     for location in region.locations:
-    #         if location.name.replace("Beat the Game - ", "") not in character_names and location.player == player:
-    #             locations_to_remove_from_region.append(location)
-
-    #     for location in locations_to_remove_from_region:
-    #         region.locations.remove(location)
-                
-    # # modify the victory requirements to only include items that are in the item names list
-    # victory_location = multiworld.get_location("__Manual Game Complete__", player)
-    # victory_location.access_rule = lambda state, items=character_names, p=player: state.has_all(items, p)
-
-    return item_pool
-
-# This method is run at the very end of pre-generation, once the place_item options have been handled and before AP generation occurs
-def after_generate_basic(world: World, multiworld: MultiWorld, player: int):
-    pass
-
-# This method is called before the victory location has the victory event placed and locked
-def before_pre_fill(world: World, multiworld: MultiWorld, player: int):
-    pass
-
-# This method is called after the victory location has the victory event placed and locked
-def after_pre_fill(world: World, multiworld: MultiWorld, player: int):
-    pass
+    ## Combine rules:
+    # old_rule = location.access_rule
+    # location.access_rule = lambda state: old_rule(state) and Example_Rule(state)
+    # OR
+    # location.access_rule = lambda state: old_rule(state) or Example_Rule(state)
 
 # The item name to create is provided before the item is created, in case you want to make changes to it
 def before_create_item(item_name: str, world: World, multiworld: MultiWorld, player: int) -> str:
@@ -106,6 +113,14 @@ def before_create_item(item_name: str, world: World, multiworld: MultiWorld, pla
 def after_create_item(item: ManualItem, world: World, multiworld: MultiWorld, player: int) -> ManualItem:
     return item
 
+# This method is run towards the end of pre-generation, before the place_item options have been handled and before AP generation occurs
+def before_generate_basic(world: World, multiworld: MultiWorld, player: int) -> list:
+    pass
+
+# This method is run at the very end of pre-generation, once the place_item options have been handled and before AP generation occurs
+def after_generate_basic(world: World, multiworld: MultiWorld, player: int):
+    pass
+
 # This is called before slot data is set and provides an empty dict ({}), in case you want to modify it before Manual does
 def before_fill_slot_data(slot_data: dict, world: World, multiworld: MultiWorld, player: int) -> dict:
     return slot_data
@@ -113,3 +128,7 @@ def before_fill_slot_data(slot_data: dict, world: World, multiworld: MultiWorld,
 # This is called after slot data is set and provides the slot data at the time, in case you want to check and modify it after Manual is done with it
 def after_fill_slot_data(slot_data: dict, world: World, multiworld: MultiWorld, player: int) -> dict:
     return slot_data
+
+# This is called right at the end, in case you want to write stuff to the spoiler log
+def before_write_spoiler(world: World, multiworld: MultiWorld, spoiler_handle) -> None:
+    pass
